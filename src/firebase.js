@@ -5,13 +5,13 @@ import { collection, addDoc, getDocs } from "@firebase/firestore"; // Perbarui i
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA9ScDjHPiGdc_8DEo5RSplS88xPglOeZg",
-  authDomain: "shrinav-official.firebaseapp.com",
-  projectId: "shrinav-official",
-  storageBucket: "shrinav-official.firebasestorage.app",
-  messagingSenderId: "117166961459",
-  appId: "1:117166961459:web:3dd2b3f77edf2161e24446",
-  measurementId: "G-C8NB47S2EM"
+ apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

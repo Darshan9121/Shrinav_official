@@ -1,3 +1,5 @@
+#private keys
+.env
 # Logs
 logs
 *.log
